@@ -4,7 +4,7 @@ body{
 #main{
     width: 400px;
     height: 500px;
-    background: url(background.jpg);
+    background: url(/background.jpg);
     margin: auto;
 }
 /* Batas gerakan plane */
@@ -36,14 +36,14 @@ body{
     background-size: 100%;
     }
     to{
-    background: url(plane2.png);
+    background: url(/plane2.png);
     background-size: 100%;
     }
 }
 #plane{
     width: 58px;
     height: 100px;
-    background: url(plane1.png);
+    background: url(/plane1.png);
     background-size: 100%;
     position: absolute;
     margin-top: 400px;
@@ -61,11 +61,11 @@ body{
 
 @keyframes fire{
     from{
-    background: url(meteor1.png);
+    background: url(/meteor1.png);
     background-size: 100%;
     }
     to{
-        background: url(meteor2.png);
+        background: url(/meteor2.png);
         background-size: 100%;
     }
 }
@@ -79,21 +79,21 @@ body{
 #meteor2{
   width: 58px;
   height: 86px;
-  background: url(meteor1.png);
+  background: url(/meteor1.png);
   background-size: 100%;
   animation: fire 0.7s infinite;
 }
 #meteor.freeze{
     width: 58px;
     height: 86px;
-    background: url(meteor1.png);
+    background: url(/meteor1.png);
     background-size: 100%;
     animation: none;
 }
 #meteor2.freeze{
   width: 58px;
   height: 86px;
-  background: url(meteor1.png);
+  background: url(/meteor1.png);
   background-size: 100%;
   animation: none;
 }
