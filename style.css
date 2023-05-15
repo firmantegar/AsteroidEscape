@@ -1,0 +1,122 @@
+body{
+    text-align: center;
+}
+#main{
+    width: 400px;
+    height: 500px;
+    background: url(images/background.jpg);
+    margin: auto;
+}
+/* Batas gerakan plane */
+#main #plane.up {
+    top: 0;
+  }
+  
+  #main #plane.down {
+    bottom: calc(100% - 100px); /* 100px adalah ukuran pesawat */
+  }
+  
+  #main #plane.left {
+    left: 0;
+  }
+  
+  #main #plane.right {
+    right: 0;
+  }
+
+#area{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    z-index: 100;
+}
+@keyframes jet{
+    from{
+    background: url(images/plane1.png);
+    background-size: 100%;
+    }
+    to{
+    background: url(images/plane2.png);
+    background-size: 100%;
+    }
+}
+#plane{
+    width: 58px;
+    height: 100px;
+    background: url(images/plane1.png);
+    background-size: 100%;
+    position: absolute;
+    margin-top: 400px;
+    animation: jet 0.7s infinite;
+}
+#plane.freeze{
+    width: 58px;
+    height: 100px;
+    background: url(images/plane1.png);
+    background-size: 100%;
+    position: absolute;
+    margin-top: 400px;
+    animation: none;
+}
+
+@keyframes fire{
+    from{
+    background: url(images/meteor1.png);
+    background-size: 100%;
+    }
+    to{
+        background: url(images/meteor2.png);
+        background-size: 100%;
+    }
+}
+#meteor{
+    width: 58px;
+    height: 86px;
+    background: url(images/meteor1.png);
+    background-size: 100%;
+    animation: fire 0.7s infinite;
+}
+#meteor2{
+  width: 58px;
+  height: 86px;
+  background: url(images/meteor1.png);
+  background-size: 100%;
+  animation: fire 0.7s infinite;
+}
+#meteor.freeze{
+    width: 58px;
+    height: 86px;
+    background: url(images/meteor1.png);
+    background-size: 100%;
+    animation: none;
+}
+#meteor2.freeze{
+  width: 58px;
+  height: 86px;
+  background: url(images/meteor1.png);
+  background-size: 100%;
+  animation: none;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:hover {
+    background-color: #0062cc;
+  }
+  
+  .button:active {
+    background-color: #005cbf;
+    box-shadow: none;
+  }
+  
